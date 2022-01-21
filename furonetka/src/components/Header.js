@@ -3,9 +3,9 @@ import "../index.css";
 export const Header = () => {
   return (
     <>
-      <header class="header__background">
-        <div class="container">
-          <div class="information">
+      <header className="header__background">
+        <div className="container">
+          <div className="information">
             <h2>Furgonetka</h2>
             <p style={{ fontSize: "18px" }}>
               Zarejestruj się i zostań naszym partnerem VIP
@@ -16,7 +16,7 @@ export const Header = () => {
             <p style={{ color: "#228cc5" }}>
               Udostępnij najlepszą ofertę na rynku i dodatkowo zarabiaj
             </p>
-            <form class="form">
+            <form className="form">
               <p>Zacznij zarabiać w 5 minut</p>
               <p style={{ fontSize: "12px" }}>
                 Zarejestruj się w minutę i sprawdź, jak to działa
@@ -40,7 +40,7 @@ export const Header = () => {
                 Uzyj od 6 do 24 znaków. Nie uzywaj łatwych sekwencji, np.
                 "123456"
               </p>
-              <button type="submit" class="btn__submit">
+              <button type="submit" className="btn__submit">
                 Załóz darmowe konto
               </button>
             </form>

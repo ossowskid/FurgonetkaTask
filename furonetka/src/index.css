@@ -4,7 +4,7 @@ body {
   padding: 0;
   font-family: "Open Sans", Verdana, sans-serif;
   font-size: 14px;
-  background-image: url(../src/images/bg-icon.svg);
+  background: url(../src/images/bg-icon.svg) repeat;
 }
 
 .header__background {
@@ -17,7 +17,7 @@ body {
   background: url(../src/images/gradient_right.png) top 50% right 40% no-repeat,
     url(../src/images/gradient_left.png) top 600% left 10% no-repeat,
     linear-gradient(to top, #edf2f7, #f9fcff);
-  background-size: 101%;
+  background-size: 100%;
 }
 .container {
   justify-content: center;
@@ -65,4 +65,47 @@ input {
 }
 .btn__submit:hover {
   background-color: #fff83e;
+}
+
+.main {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.main__content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.profits {
+  display: flex;
+  flex-flow: column;
+  width: 80%;
+  /* background-color: pink; */
+}
+.profits__content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.profits__image {
+  width: 220px;
+  height: 220px;
+}
+
+.about-furgonetka {
+  height: 35vh;
+  width: 100%;
+}
+
+.footer {
+  height: 35vh;
+  width: 100%;
 }
