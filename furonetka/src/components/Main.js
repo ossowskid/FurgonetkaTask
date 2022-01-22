@@ -25,7 +25,7 @@ export const Main = () => {
                   alt="Stała prowizja"
                 />
                 <p>
-                  <b>Stała prowizja procentowa</b> od kazdej dostarczonej
+                  <b>Stała prowizja procentowa</b> od każdej dostarczonej
                   przesyłki. Zarabiaj nawet 2zł na przesyłce.
                 </p>
               </div>

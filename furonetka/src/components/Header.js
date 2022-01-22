@@ -18,21 +18,27 @@ export const Header = () => {
     setIsSubmit(true);
   };
 
+  const refresh = () => {
+    window.location.reload();
+  };
+
   useEffect(() => {
-    console.log(formErrors);
     if (Object.keys(formErrors).length === 0 && isSubmit) {
-      console.log(formValues);
     }
-  }, [formErrors]);
+  }, [formErrors, formValues, isSubmit]);
 
   const validate = (values) => {
     const errors = {};
-    const regex = /^[%\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
     if (!values.email) {
       errors.email = "To pole nie moze być puste! Proszę podać adres e-mail";
+    } else if (!regex.test(values.email)) {
+      errors.email = "Nieprawidłowy format!";
     }
     if (!values.password) {
       errors.password = "To pole nie moze być puste! Proszę podać hasło";
+    } else if (values.password.length < 4) {
+      errors.password = "Hasło musi zawierać conajmniej 4 znaki!";
     }
     return errors;
   };
@@ -41,18 +47,18 @@ export const Header = () => {
     <>
       <header className="header__background">
         <div className="container">
+          {Object.keys(formErrors).length === 0 && isSubmit ? refresh() : null}
           <div className="information">
             <h2>Furgonetka</h2>
             <p style={{ fontSize: "18px" }}>
               Zarejestruj się i zostań naszym partnerem VIP
             </p>
             <p>
-              Przesyłki dla Twoich klientów juz <b>od 8zł</b>
+              Przesyłki dla Twoich klientów już <b>od 8zł</b>
             </p>
             <p style={{ color: "#228cc5" }}>
               Udostępnij najlepszą ofertę na rynku i dodatkowo zarabiaj
             </p>
-            {/* <pre>{JSON.stringify(formValues, undefined, 2)}</pre> */}
           </div>
           <div className="form">
             <div className="form__content">
@@ -88,7 +94,7 @@ export const Header = () => {
                   <p className="form__error">{formErrors.password}</p>
                 </div>
                 <button type="submit" className="btn__submit">
-                  Załóz darmowe konto
+                  Załóż darmowe konto
                 </button>
               </div>
             </form>

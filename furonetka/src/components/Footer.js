@@ -8,7 +8,7 @@ export const Footer = () => {
           </p>
           <div className="footer__button">
             <button className="btn__submit footer__btn">
-              Załóz darmowe konto
+              Załóż darmowe konto
             </button>
           </div>
         </div>
