@@ -1,6 +1,10 @@
 import commisionImage from "../images/illustration-features-partner-01.svg";
 import affiliativeImage from "../images/illustration-features-partner-02.svg";
 import regularIncomeImage from "../images/illustration-features-partner-03.svg";
+import experienceImage from "../images/ic-experience-bg.svg";
+import satisfiedImage from "../images/ic-satisfied-clients-bg.svg";
+import reviewImage from "../images/ic-reviews-bg.svg";
+import parcelImage from "../images/ic-parcels-bg.svg";
 
 export const Main = () => {
   return (
@@ -9,7 +13,9 @@ export const Main = () => {
         <div className="main__content">
           <div className="profits">
             <div className="profits__container">
-              <h3>Co zyskujesz zostając partnerem?</h3>
+              <p style={{ fontSize: "20px" }}>
+                Co zyskujesz zostając partnerem?
+              </p>
             </div>
             <div className="profits__content">
               <div className="profits__box">
@@ -46,8 +52,46 @@ export const Main = () => {
               </div>
             </div>
           </div>
-          <div className="main__content about-furgonetka">cyferki</div>
-          <div className="main__content footer">Stopka</div>
+          <div className="experience">
+            <div className="experience__content">
+              <div className="experience__box">
+                <img
+                  className="experience__image"
+                  src={experienceImage}
+                  alt="długość doświadczenia"
+                />
+                <h4>9</h4>
+                <p>lat doświadczenia</p>
+              </div>
+              <div className="experience__box">
+                <img
+                  className="experience__image"
+                  src={satisfiedImage}
+                  alt="ilość zadowolonych klientów"
+                />
+                <h4>870 000</h4>
+                <p>zadowolonych klientów</p>
+              </div>
+              <div className="experience__box">
+                <img
+                  className="experience__image"
+                  src={reviewImage}
+                  alt="ilość pozytywnych opinii na Opineo.pl"
+                />
+                <h4>55 000</h4>
+                <p>pozytywnych opinii na Opineo.pl</p>
+              </div>
+              <div className="experience__box">
+                <img
+                  className="experience__image"
+                  src={parcelImage}
+                  alt="ilość nadanych przesyłek"
+                />
+                <h4>25 000 000</h4>
+                <p>nadanych przesyłek</p>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </>
