@@ -1,6 +1,14 @@
+import { useState } from "react";
 import "../index.css";
 
 export const Header = () => {
+  const initialValues = { email: "", password: "" };
+  const [formValues, setFormValues] = useState(initialValues);
+
+  const handleChange = (event) => {
+    console.log(event.target);
+  };
+
   return (
     <>
       <header className="header__background">
@@ -21,19 +29,20 @@ export const Header = () => {
               <p style={{ fontSize: "12px" }}>
                 Zarejestruj się w minutę i sprawdź, jak to działa
               </p>
-              <label for="email" />
               <input
                 type="text"
                 name="email"
-                id="name"
                 placeholder="jan.kowalski@gmail.com"
+                value={formValues.email}
+                onChange={handleChange}
                 required
               />
               <input
                 type="password"
                 name="password"
-                id="password"
                 placeholder="Hasło"
+                value={formValues.password}
+                onChange={handleChange}
                 required
               />
               <p style={{ color: "#919191", fontSize: "9px" }}>
