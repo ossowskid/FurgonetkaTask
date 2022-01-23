@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
 body {
   margin: 0;
   padding: 0;
@@ -174,4 +175,274 @@ input {
 
 .footer__btn {
   width: 180px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .header__background {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    background: url(../src/images/gradient_right.png) top right 40% no-repeat,
+      url(../src/images/gradient_left.png) top left 10% no-repeat,
+      linear-gradient(to top, #edf2f7, #f9fcff);
+    background-size: 100%;
+  }
+  .profits {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    min-width: 992px;
+    max-width: 1199px;
+  }
+  .profits__content {
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 250px;
+    max-height: 500px;
+    min-width: 992px;
+    max-width: 1199px;
+  }
+  .experience {
+    display: flex;
+    justify-content: center;
+    background-color: #f6fafd;
+    min-width: 992px;
+    max-width: 1199px;
+    padding: 30px 0;
+  }
+
+  .experience__content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header__background {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    background: url(../src/images/gradient_right.png) top right 40% no-repeat,
+      url(../src/images/gradient_left.png) top left 10% no-repeat,
+      linear-gradient(to top, #edf2f7, #f9fcff);
+    background-size: 180%;
+  }
+  .profits {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    min-width: 768px;
+    max-width: 991px;
+  }
+  .profits__content {
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 250px;
+    max-height: 500px;
+    min-width: 768px;
+    max-width: 991px;
+  }
+  .experience {
+    display: flex;
+    justify-content: center;
+    background-color: #f6fafd;
+    min-width: 768px;
+    max-width: 991px;
+    padding: 30px 0;
+  }
+
+  .experience__content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  body {
+    font-size: 11px;
+  }
+  .header__background {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    background: url(../src/images/gradient_right.png) top right 40% no-repeat,
+      url(../src/images/gradient_left.png) top left 10% no-repeat,
+      linear-gradient(to top, #edf2f7, #f9fcff);
+    background-size: 300%;
+  }
+  .container {
+    height: 70vh;
+    min-width: 481px;
+    max-width: 767px;
+  }
+  .information {
+    display: flex;
+    flex-flow: column;
+    padding: 25px 0;
+    min-width: 481px;
+    max-width: 767px;
+    height: 300px;
+  }
+  .form {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #fff;
+    height: 300px;
+    width: 300px;
+    box-shadow: 0 0 5px #d3d3d3;
+    border-radius: 5px;
+  }
+  .form__content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+  }
+
+  .form__box {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 200px;
+    width: 300px;
+  }
+
+  .form__inputs {
+    height: 70px;
+    margin: 5px;
+  }
+
+  .form__error {
+    color: red;
+    font-size: 8px;
+  }
+
+  input {
+    height: 35px;
+    width: 250px;
+    border: none;
+    box-shadow: 0 0 5px #d3d3d3;
+    border-radius: 5px;
+  }
+
+  .btn__submit {
+    border: none;
+    text-decoration: none;
+    width: 80%;
+    height: 35px;
+    background-color: #fdd83e;
+    box-shadow: 0 0 5px #d3d3d3;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .btn__submit:hover {
+    background-color: #fff83e;
+  }
+
+  .main {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .main__content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .profits {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    min-width: 481px;
+    max-width: 767px;
+  }
+  .profits__content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    max-height: 500px;
+    min-width: 481px;
+    max-width: 767px;
+    width: 70%;
+  }
+  .profits__box {
+    width: 230px;
+    height: 300px;
+  }
+
+  .profits__image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .experience {
+    display: flex;
+    justify-content: center;
+    background-color: #f6fafd;
+    min-width: 481px;
+    max-width: 767px;
+    padding: 30px 0;
+  }
+
+  .experience__content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+  }
+
+  .experience__box {
+    width: 150px;
+  }
+  .experience__box h4 {
+    margin: 0;
+    font-size: 18px;
+  }
+  .experience__box p {
+    margin: 0;
+  }
+
+  .experience__image {
+    width: 110px;
+    height: 110px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+  }
+
+  .footer__button {
+    padding: 20px;
+  }
+
+  .footer__btn {
+    width: 180px;
+  }
 }
