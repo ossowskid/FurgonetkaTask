@@ -15,7 +15,7 @@ p {
   align-items: center;
   height: 65vh;
   background: url(../src/images/gradient_right.png) top 50% right 40% no-repeat,
-    url(../src/images/gradient_left.png) top 0% left 10% no-repeat,
+    url(../src/images/gradient_left.png) top -50% left 10% no-repeat,
     linear-gradient(to top, #edf2f7, #f9fcff);
   background-size: 100%;
 }
@@ -95,7 +95,7 @@ input {
   flex-flow: row;
   justify-content: center;
   align-items: center;
-  height: 620px;
+  margin-top: 50px;
 }
 
 .main__content {
@@ -104,7 +104,6 @@ input {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 450px;
 }
 
 .profits {
@@ -112,17 +111,17 @@ input {
   flex-flow: column;
   align-items: center;
   width: 100%;
-  margin: 50px 0;
 }
 .profits__content {
   display: flex;
   justify-content: space-evenly;
   min-height: 250px;
+  max-height: 500px;
   width: 70%;
 }
 .profits__box {
-  width: 18%;
-  height: 350px;
+  width: 230px;
+  height: 300px;
 }
 
 .profits__image {
