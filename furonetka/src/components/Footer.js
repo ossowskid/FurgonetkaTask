@@ -3,7 +3,7 @@ export const Footer = () => {
     <>
       <footer className="footer">
         <div className="footer__container">
-          <p style={{ fontSize: "18px" }}>
+          <p>
             Dołącz do tysięcy partnerów, udostępniających serwis Furgonetka.pl
           </p>
           <div className="footer__button">
