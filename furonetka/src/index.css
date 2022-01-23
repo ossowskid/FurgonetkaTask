@@ -54,7 +54,6 @@ p {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-
   height: 220px;
   width: 350px;
 }
@@ -140,9 +139,8 @@ input {
 
 .experience__content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  width: 35%;
 }
 
 .experience__position {
