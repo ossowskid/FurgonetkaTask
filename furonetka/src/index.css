@@ -5,9 +5,10 @@ body {
   padding: 0;
   font-family: "Open Sans", Verdana, sans-serif;
   background: url(../src/images/bg-icon.svg) repeat;
-}
-p {
   font-size: 16px;
+}
+
+p {
   margin: 5px;
 }
 
@@ -15,12 +16,14 @@ p {
   display: flex;
   flex-flow: row;
   justify-content: center;
-  height: 50vh;
+  align-items: center;
+  height: 65vh;
   background: url(../src/images/gradient_right.png) top 50% right 40% no-repeat,
     url(../src/images/gradient_left.png) top -50% left 10% no-repeat,
     linear-gradient(to top, #edf2f7, #f9fcff);
   background-size: 100%;
 }
+
 .container {
   height: 80%;
 }
@@ -122,6 +125,7 @@ input {
   max-height: 500px;
   width: 70%;
 }
+
 .profits__box {
   width: 230px;
   height: 300px;
@@ -188,13 +192,16 @@ input {
 
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .header__background {
-    height: 45vh;
+    align-items: center;
+    min-height: 70vh;
+    max-height: 100vh;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .header__background {
-    height: 45vh;
+    min-height: 80vh;
+    max-height: 100vh;
     background: url(../src/images/gradient_right.png) top right 40% no-repeat,
       url(../src/images/gradient_left.png) top left 10% no-repeat,
       linear-gradient(to top, #edf2f7, #f9fcff);
@@ -220,11 +227,21 @@ input {
     font-size: 14px;
   }
   .header__background {
-    height: 45vh;
+    align-items: center;
+    min-height: 60vh;
+    max-height: 80vh;
     background: url(../src/images/gradient_right.png) top right 40% no-repeat,
       url(../src/images/gradient_left.png) top left 10% no-repeat,
       linear-gradient(to top, #edf2f7, #f9fcff);
     background-size: 150%;
+  }
+
+  .profits {
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 35vh;
+    max-height: 70vh;
   }
 
   .profits__content {
@@ -244,7 +261,7 @@ input {
     font-size: 14px;
   }
   .header__background {
-    height: 50vh;
+    height: 80vh;
     align-items: center;
     background: url(../src/images/gradient_right.png) top right 40% no-repeat,
       url(../src/images/gradient_left.png) top left 10% no-repeat,
@@ -275,8 +292,9 @@ input {
 
   .profits {
     flex-flow: column;
-    justify-content: space-evenly;
-    height: 65vh;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
   }
 
   .profits__content {
@@ -321,21 +339,17 @@ input {
 }
 @media only screen and (min-width: 360px) and (max-width: 480px) {
   .header__background {
-    height: 50vh;
-    min-width: 360px;
-    max-width: 480px;
-    align-items: center;
-    background: url(../src/images/gradient_right.png) top right 40% no-repeat,
-      url(../src/images/gradient_left.png) top left 10% no-repeat,
-      linear-gradient(to top, #edf2f7, #f9fcff);
-    background-size: 200%;
+    /* align-items: center; */
+    min-height: 75vh;
+    max-height: 80vh;
+    background-size: cover;
   }
   .container {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    min-width: 360px;
-    max-width: 480px;
+    /* min-width: 360px; */
+    /* max-width: 480px; */
   }
 
   .form__content {
@@ -357,17 +371,23 @@ input {
   .profits {
     flex-flow: column;
     justify-content: space-evenly;
-    height: 65vh;
+    /* height: 90vh; */ /*tu było zmienione */
   }
 
   .profits__content {
     flex-flow: column;
     align-items: center;
+    min-height: unset;
+    max-height: unset;
+  }
+  .profits__box {
+    width: 220px;
+    height: 210px;
   }
 
   .profits__image {
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
   }
 
   .experience__content {
@@ -376,18 +396,13 @@ input {
 
   .experience__position {
     margin: 5px;
-    min-width: 360px;
-    max-width: 480px;
+    /* min-width: 360px;
+    max-width: 480px; */
   }
 
   .experience__image {
     width: 90px;
     height: 90px;
-  }
-
-  .footer {
-    min-width: 360px;
-    max-width: 480px;
   }
 
   .footer__container p {
