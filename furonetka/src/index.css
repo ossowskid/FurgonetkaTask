@@ -206,9 +206,6 @@ input {
     align-items: center;
   }
 
-  .profits__content {
-    min-width: 992px;
-  }
   .experience {
     display: flex;
     justify-content: center;
@@ -322,12 +319,12 @@ input {
     width: 180px;
   }
 }
-@media only screen and (max-width: 480px) {
-  body {
-    font-size: 11px;
-  }
+@media only screen and (min-width: 360px) and (max-width: 480px) {
   .header__background {
-    height: 400px;
+    height: 50vh;
+    min-width: 360px;
+    max-width: 480px;
+    align-items: center;
     background: url(../src/images/gradient_right.png) top right 40% no-repeat,
       url(../src/images/gradient_left.png) top left 10% no-repeat,
       linear-gradient(to top, #edf2f7, #f9fcff);
@@ -337,9 +334,8 @@ input {
     display: flex;
     flex-flow: column;
     justify-content: center;
-  }
-  .information {
-    margin-top: 70px;
+    min-width: 360px;
+    max-width: 480px;
   }
 
   .form__content {
@@ -355,7 +351,13 @@ input {
   }
 
   .main {
-    margin-top: 120px;
+    margin-top: 0;
+  }
+
+  .profits {
+    flex-flow: column;
+    justify-content: space-evenly;
+    height: 65vh;
   }
 
   .profits__content {
@@ -373,9 +375,9 @@ input {
   }
 
   .experience__position {
-    display: flex;
     margin: 5px;
-    width: 400px;
+    min-width: 360px;
+    max-width: 480px;
   }
 
   .experience__image {
@@ -383,9 +385,11 @@ input {
     height: 90px;
   }
 
-  .footer__container {
-    max-width: 400px;
+  .footer {
+    min-width: 360px;
+    max-width: 480px;
   }
+
   .footer__container p {
     font-size: 13px;
   }
