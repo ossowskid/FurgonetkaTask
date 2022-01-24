@@ -7,13 +7,14 @@ body {
   background: url(../src/images/bg-icon.svg) repeat;
 }
 p {
+  font-size: 16px;
   margin: 5px;
 }
+
 .header__background {
   display: flex;
   flex-flow: row;
   justify-content: center;
-  align-items: center;
   height: 65vh;
   background: url(../src/images/gradient_right.png) top 50% right 40% no-repeat,
     url(../src/images/gradient_left.png) top -50% left 10% no-repeat,
@@ -21,13 +22,18 @@ p {
   background-size: 100%;
 }
 .container {
-  height: 75vh;
+  height: 80%;
 }
 .information {
   display: flex;
   flex-flow: column;
-  padding: 25px 0;
+  align-items: center;
 }
+
+.header__logo {
+  width: 180px;
+}
+
 .form {
   display: flex;
   flex-flow: column;
@@ -96,9 +102,6 @@ input {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-}
-
-.main__content {
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -183,9 +186,15 @@ input {
   width: 180px;
 }
 
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .header__background {
+    height: 45vh;
+  }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .header__background {
-    height: 55vh;
+    height: 45vh;
     background: url(../src/images/gradient_right.png) top right 40% no-repeat,
       url(../src/images/gradient_left.png) top left 10% no-repeat,
       linear-gradient(to top, #edf2f7, #f9fcff);
@@ -194,14 +203,7 @@ input {
   .container {
     display: flex;
     flex-flow: column;
-    justify-content: center;
-  }
-  .information {
-    margin-top: 70px;
-  }
-
-  .main {
-    margin-top: 120px;
+    align-items: center;
   }
 
   .profits__content {
@@ -221,7 +223,7 @@ input {
     font-size: 14px;
   }
   .header__background {
-    height: 65vh;
+    height: 45vh;
     background: url(../src/images/gradient_right.png) top right 40% no-repeat,
       url(../src/images/gradient_left.png) top left 10% no-repeat,
       linear-gradient(to top, #edf2f7, #f9fcff);
@@ -241,11 +243,12 @@ input {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  body {
-    font-size: 11px;
+  p {
+    font-size: 14px;
   }
   .header__background {
-    height: 400px;
+    height: 50vh;
+    align-items: center;
     background: url(../src/images/gradient_right.png) top right 40% no-repeat,
       url(../src/images/gradient_left.png) top left 10% no-repeat,
       linear-gradient(to top, #edf2f7, #f9fcff);
@@ -255,9 +258,6 @@ input {
     display: flex;
     flex-flow: column;
     justify-content: center;
-  }
-  .information {
-    margin-top: 70px;
   }
 
   .form__content {
@@ -273,7 +273,13 @@ input {
   }
 
   .main {
-    margin-top: 120px;
+    margin-top: 0;
+  }
+
+  .profits {
+    flex-flow: column;
+    justify-content: space-evenly;
+    height: 65vh;
   }
 
   .profits__content {

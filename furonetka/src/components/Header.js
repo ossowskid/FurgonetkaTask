@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "../index.css";
+import FurgonetkaLogo from "../images/Furgonetka_Logo_RGB.svg";
 
 export const Header = () => {
   const initialValues = { email: "", password: "" };
@@ -49,55 +50,55 @@ export const Header = () => {
         <div className="container">
           {Object.keys(formErrors).length === 0 && isSubmit ? refresh() : null}
           <div className="information">
-            <h2>Furgonetka</h2>
-            <p style={{ fontSize: "18px" }}>
-              Zarejestruj się i zostań naszym partnerem VIP
-            </p>
+            <div className="header__logo">
+              <img src={FurgonetkaLogo} alt="Logo Furgonetka.pl" />
+            </div>
+            <p>Zarejestruj się i zostań naszym partnerem VIP</p>
             <p>
               Przesyłki dla Twoich klientów już <b>od 8zł</b>
             </p>
             <p style={{ color: "#228cc5" }}>
               Udostępnij najlepszą ofertę na rynku i dodatkowo zarabiaj
             </p>
-          </div>
-          <div className="form">
-            <div className="form__content">
-              <p>Zacznij zarabiać w 5 minut</p>
-              <p style={{ fontSize: "12px" }}>
-                Zarejestruj się w minutę i sprawdź, jak to działa
-              </p>
-            </div>
-            <form onSubmit={handleSubmit}>
-              <div className="form__box">
-                <div className="form__inputs">
-                  <input
-                    type="text"
-                    name="email"
-                    placeholder="jan.kowalski@gmail.com"
-                    value={formValues.email}
-                    onChange={handleChange}
-                  />
-                  <p className="form__error">{formErrors.email}</p>
-                </div>
-                <div className="form__inputs">
-                  <input
-                    type="password"
-                    name="password"
-                    placeholder="Hasło"
-                    value={formValues.password}
-                    onChange={handleChange}
-                  />
-                  <p style={{ color: "#919191", fontSize: "9px" }}>
-                    Uzyj od 6 do 24 znaków. Nie uzywaj łatwych sekwencji, np.
-                    "123456"
-                  </p>
-                  <p className="form__error">{formErrors.password}</p>
-                </div>
-                <button type="submit" className="btn__submit">
-                  Załóż darmowe konto
-                </button>
+            <div className="form">
+              <div className="form__content">
+                <p>Zacznij zarabiać w 5 minut</p>
+                <p style={{ fontSize: "12px" }}>
+                  Zarejestruj się w minutę i sprawdź, jak to działa
+                </p>
               </div>
-            </form>
+              <form onSubmit={handleSubmit}>
+                <div className="form__box">
+                  <div className="form__inputs">
+                    <input
+                      type="text"
+                      name="email"
+                      placeholder="jan.kowalski@gmail.com"
+                      value={formValues.email}
+                      onChange={handleChange}
+                    />
+                    <p className="form__error">{formErrors.email}</p>
+                  </div>
+                  <div className="form__inputs">
+                    <input
+                      type="password"
+                      name="password"
+                      placeholder="Hasło"
+                      value={formValues.password}
+                      onChange={handleChange}
+                    />
+                    <p style={{ color: "#919191", fontSize: "9px" }}>
+                      Uzyj od 6 do 24 znaków. Nie uzywaj łatwych sekwencji, np.
+                      "123456"
+                    </p>
+                    <p className="form__error">{formErrors.password}</p>
+                  </div>
+                  <button type="submit" className="btn__submit">
+                    Załóż darmowe konto
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </header>
