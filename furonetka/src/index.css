@@ -15,7 +15,7 @@ p {
   display: flex;
   flex-flow: row;
   justify-content: center;
-  height: 65vh;
+  height: 50vh;
   background: url(../src/images/gradient_right.png) top 50% right 40% no-repeat,
     url(../src/images/gradient_left.png) top -50% left 10% no-repeat,
     linear-gradient(to top, #edf2f7, #f9fcff);
