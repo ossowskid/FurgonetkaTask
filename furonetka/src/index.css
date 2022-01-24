@@ -339,7 +339,6 @@ input {
 }
 @media only screen and (min-width: 360px) and (max-width: 480px) {
   .header__background {
-    /* align-items: center; */
     min-height: 75vh;
     max-height: 80vh;
     background-size: cover;
@@ -348,8 +347,6 @@ input {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    /* min-width: 360px; */
-    /* max-width: 480px; */
   }
 
   .form__content {
@@ -371,7 +368,6 @@ input {
   .profits {
     flex-flow: column;
     justify-content: space-evenly;
-    /* height: 90vh; */ /*tu było zmienione */
   }
 
   .profits__content {
@@ -396,8 +392,6 @@ input {
 
   .experience__position {
     margin: 5px;
-    /* min-width: 360px;
-    max-width: 480px; */
   }
 
   .experience__image {
